@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container">
+
+        <!-- Recipe image and name section -->
+        <div class="section">
+            <div class="row">
+                <!-- Recipe image -->
+                <div class="col s12 m6">
+                    <img class="recipe-image" src="{{ recipe.recipe_image }}" alt="Recipe Image" loading="lazy">
+                </div>
+                <!-- Recipe name/info chips -->
+                <div class="col s12 m6">
+                    <!-- Recipe name -->
+                    <h5 class="center-align page-header">{{ recipe.recipe_name }}</h5>
+                    <div class="divider"></div>
+                    <!-- Recipe info chips -->
+                    <ul class="center-align">
+                        <li>
+                            <div class="chip">
+                                <i class="fas fa-user-friends"></i>
+                                Serves: {{ recipe.recipe_serves }}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chip"><i class="far fa-clock"></i>
+                                Time: {{ recipe.recipe_time }} mins
+                            </div>
+                        </li>
+                        <li>
+                            {% if recipe.recipe_vegetarian == "on" %}
+                                <div class="chip"><i class="fas fa-carrot"></i>
+                                Vegetarian
+                                </div>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recipe ingredients and method section -->
+        <div class="section">
+            <div class="row">
+                <!-- Ingredients listing -->
+                <div class="col s12 m6">
+                    <h5 class="center-align page-header">Ingredients</h5>
+                    <div class="divider"></div>
+                    {% for line in recipe.recipe_ingredients.splitlines() %} <!-- Note: lists ingredients on display, splits lines at each new line -->
+                        <p class="details">{{ line }}</p>      
+                    {% endfor %}
+                </div>
+                <!-- Method listing -->
+                <div class="col s12 m6">
+                    <h5 class="center-align page-header">Method</h5>
+                    <div class="divider"></div>
+                    {% for line in recipe.recipe_method.splitlines() %} <!-- Note: lists method on display, splits lines at each new line -->
+                    <p class="details">{{ line }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Added by username display -->
+        <p class="center-align added-by">Added by: {{ recipe.recipe_addedby }}</p>
+
+        <!-- Button for back to recipes.html -->
+        <div class="section">
+            <div class="center-align">
+                <a href="{{ url_for('get_recipes') }}" class="btn-small">Recipes</a>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
