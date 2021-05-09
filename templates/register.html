@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <!-- Page Header -->
+    <h4 class="center-align page-header">Register</h4>
+
+    <!-- Signup Form -->
+    <div class="row">
+        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+            <div class="card-panel">
+                <!-- Username -->
+                <div class="row">
+					<div class="input-field col s12">
+                        <input id="username" name="username" type="text" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                        <label for="username">Create Username</label>
+                        <span class="register-help">5-15 characters, letters/numbers only</span>
+					</div>
+                </div>
+                <!-- Password -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" name="password" type="password" minlength="5"
+                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                        <label for="password">Create Password</label>
+                        <span class="register-help">5-15 characters, letters/numbers only</span>
+                    </div>
+                </div>
+                <!-- Signup button -->
+                <div class="row">
+                    <button type="submit" class="col s12 btn-large teal lighten-1 text-shadow">
+                        Register <i class="fas fa-sign-in-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
