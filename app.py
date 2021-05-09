@@ -175,7 +175,7 @@ def page_not_found(error):
 def something_wrong(error):
     return render_template('500.html'), 500
 
-    @app.route("/recipe_details/<recipe_id>")  # RECIPE INFORMATIONS
+@app.route("/recipe_details/<recipe_id>")  # RECIPE INFORMATIONS
 def recipe_details(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     return render_template("recipe_details.html", recipe=recipe)
