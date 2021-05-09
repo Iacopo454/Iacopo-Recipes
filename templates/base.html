@@ -27,7 +27,7 @@
     {% block styles %}
     {% endblock %}
     
-    <title>Iacopo recipes</title>
+    <title>EasyDinner</title>
 
 </head>
 
@@ -39,13 +39,13 @@
         <div class="navbar-fixed">
             <nav class="nav-extended text-shadow teal lighten-2">
                 <div class="nav-wrapper">
-                    <a href="/index" class="brand-logo left">Iacopo recipes</a>
+                    <a href="/index" class="brand-logo left">EasyDinner</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="{{ url_for('index') }}">Home</a></li>
                         <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
                         {% if session.user %} <!-- Note: if user logged in, display following links -->
-                            <li><a href="{{ url_for('user', username=session['user']) }}">User</a></li>
+                            <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                             <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
                             <li><a href="{{ url_for('logout') }}">Log Out</a></li>
                         {% else %}
@@ -58,7 +58,19 @@
         </div>
     
         <!-- Mobile Sidenav -->
-      
+        <ul class="sidenav" id="mobile-demo">
+            <li><h5 class="center-align page-header">EasyDinner</h5></li>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
+            {% if session.user %}
+                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
+                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Log In</a></li>
+                <li><a href="{{ url_for('register') }}">Sign Up</a></li>
+            {% endif %}
+        </ul>
 
     </header>
 
@@ -84,7 +96,7 @@
         <div class="container">
             <div class="row">
                 <div class="col s6 left-align">
-                   Only traditional recipes
+                    A recipe sharing site for quick and easy family meals.
                 </div>
                 <div class="col s6 right-align">
                     <div class="social-links">
@@ -97,7 +109,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container center-align">
-                © 2021 
+                © 2021 Upesh Patel
             </div>
         </div>
     </footer>
