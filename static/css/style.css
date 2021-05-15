@@ -66,7 +66,8 @@ nav .brand-logo {
 /* Homepage hero image overlaying logo */
 .home-image h1 {
     font-family: 'Pacifico', cursive; 
-    color: teal;
+    color: lighten-1
+#673ab7 deep-purple;
 }
 
 /* Homepage hero image overlaying text */
