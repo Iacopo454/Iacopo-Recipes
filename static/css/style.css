@@ -12,7 +12,7 @@ body {
 /* Page headers on top of each html template */
 .page-header {
     font-weight: bold;
-    color: rgb(193, 204, 35);
+    color: rgb(38, 39, 28);
 }
 
 /* --- NAVBAR --- */
@@ -64,11 +64,11 @@ nav .brand-logo {
 }
 
 /* Homepage hero image overlaying logo */
-.home-image h1 {
+/* .home-image h1 {
     font-family: 'Pacifico', cursive; 
     color: lighten-1
 #673ab7 deep-purple;
-}
+} */
 
 /* Homepage hero image overlaying text */
 .home-image p {
@@ -143,7 +143,7 @@ nav .brand-logo {
     line-height: 32px;
     padding: 0 12px;
     border-radius: 16px;
-    background-color: rgb(114, 120, 204);
+    /* background-color: rgb(114, 120, 204); */
     margin-bottom: 5px;
     margin-right: 5px;
 }
@@ -154,10 +154,10 @@ nav .brand-logo {
 }
 
 /* Added by username text */
-.added-by {
+/* .added-by {
     font-family: 'Roboto', sans-serif;
     color: rgb(155, 148, 148);
-}
+} */
 
 /* Profile page user recipes bottom padding to extend display */
 .section-userrecipes {
@@ -169,7 +169,7 @@ nav .brand-logo {
 /* Help text for registering */
 .register-help {
     font-size: 12px;
-    color: rgb(155, 148, 148);
+    color: rgb(148, 153, 172);
 }
 
 /* No search results text */
