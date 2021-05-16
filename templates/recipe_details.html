@@ -23,18 +23,7 @@
                                 Serves: {{ recipe.recipe_serves }}
                             </div>
                         </li>
-                        <li>
-                            <div class="chip"><i class="far fa-clock"></i>
-                                Time: {{ recipe.recipe_time }} mins
-                            </div>
-                        </li>
-                        <li>
-                            {% if recipe.recipe_vegetarian == "on" %}
-                                <div class="chip"><i class="fas fa-carrot"></i>
-                                Vegetarian
-                                </div>
-                            {% endif %}
-                        </li>
+                   
                     </ul>
                 </div>
             </div>
@@ -63,7 +52,7 @@
         </div>
         
         <!-- Added by username display -->
-        <p class="center-align added-by">Added by: {{ recipe.recipe_addedby }}</p>
+        <p class="center-align added-by">Author: {{ recipe.recipe_author }}</p>
 
         <!-- Button for back to recipes.html -->
         <div class="section">
