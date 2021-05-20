@@ -116,7 +116,7 @@ Font Awesome
 # Deployment
 The source code for this site is in GitHub. Heroku was used to deploy the site. MongoDB was used for the database.
 
-The live link is: https://iacopo-recipe.herokuapp.com/
+The repository link on Github platform is: https://github.com/Iacopo454/Iacopo-Recipes
 
 MongoDB
 
