@@ -2,10 +2,9 @@
 I am building my recipe book website which will also contains user recipes,
 so the website will become a sharing recipe database website. 
 
-## Index 
 # UX
-.
-Overview
+Overview:
+
 The purpose of this project is to design a website that user can enjoy to read and learn new simple recipes and also add their own ones. 
 The website will be simple to use, from registering to adding a new recipe to the database. 
 The website can be very helpful and inspirational to many different category of people, especially who struggle to find the time to prepare and cook complicated meals due to working reasons. 
@@ -62,12 +61,12 @@ Existing
 
 The website uses Materialize CSS features:
 
-- Navbar (top navbar)
-- Sidenav (to turn into sidenav on mobile)
-- Cards (to display recipes)
-- Forms (to add/edit recipes)
-- Buttons (for links to other pages and add/edit/delete actions)
-- Footer (bottom footer)
+ Navbar (top navbar)
+ Sidenav (to turn into sidenav on mobile)
+ Cards (to display recipes)
+ Forms (to add/edit recipes)
+ Buttons (for links to other pages and add/edit/delete actions)
+ Footer (bottom footer)
 
 The website is linked to MongoDB database
 Search facility to search recipes
@@ -140,8 +139,7 @@ Open Git Bash.
 
 Change the current working directory to the location where you want the cloned directory.
 
-Type git clone, and then paste the URL you copied earlier: $ git clone https://github.com/YOUR-USERNAME/Iacopo-Recipes
-
+Type git clone, and then paste the URL you copied earlier: $ git clone https://iacopo-recipe.herokuapp.com/
 Press Enter to create your local clone.
 
 Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
