@@ -116,6 +116,7 @@ Font Awesome
 # Deployment
 The source code for this site is in GitHub. Heroku was used to deploy the site. MongoDB was used for the database.
 
+The live link is: https://iacopo-recipe.herokuapp.com/
 
 MongoDB
 
@@ -139,7 +140,8 @@ Open Git Bash.
 
 Change the current working directory to the location where you want the cloned directory.
 
-Type git clone, and then paste the URL you copied earlier: $ git clone https://iacopo-recipe.herokuapp.com/
+Type git clone, and then paste the URL you copied earlier: $ git clone https://github.com/Iacopo454/Iacopo-Recipes
+
 Press Enter to create your local clone.
 
 Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
