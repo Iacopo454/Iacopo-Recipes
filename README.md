@@ -231,14 +231,15 @@ OS Compatibility.
 Tested on iOS and Windows 10.
 Tested for responsivness on Chrome DevTools.
 
-
-
 # Credits
 
 Tutorials
 
 I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project.
 
+I find useful to watch also some youtube tutorials and check other sources: 
+https://www.youtube.com/watch?v=BafKf9TqEUg
+https://www.youtube.com/watch?v=N42pkl-aIIQ
 https://www.w3schools.com/python/python_mongodb_create_db.asp
 
 Slack Community
