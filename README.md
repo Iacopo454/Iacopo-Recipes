@@ -90,60 +90,58 @@ Coding languages:
 HTML5
 CSS3
 Javascript
+Jquery
 Python (incl. Jinja)
-
-Database:
-
+Python validator http://pep8online.com/ very helpful to chech the identation
+CSS3 validator https://jigsaw.w3.org/css-validator/
+Javascript validator https://jshint.com
+Database: 
 MongoDB
-
 Frameworks:
-
 Materialize CSS
 Flask
-Jquery
+Other: 
 
-Storing/editing/deploying Code:
-
-Gitpod
-Github
-Heroku
-
-Other:
-
-Google Fonts
-Font Awesome
+Materialize 1.0.0 version- Used for the responsive layout as well as custom components such as header, footer, images, icons, grids, cards, and collapse element.
+Font Awesome - Font Awesome is used to add social icons for socila links.
+Google Fonts - Google Fonts is used to import 'Expo' and 'Cinzel'.
+Git - Git is used to allow for tracking of any changes in the code and for the version control.
+GitPod - GitPod, connected to GitHub, hosted the coding space and allowed the project to be committed to the Github repository.
+Github - GitHub is used to host the project files and publish the live website by using Git Pages.
+The repository link on Github platform is: https://github.com/Iacopo454/Iacopo-Recipes
+Heroku - Heroku is the cloud platform to deploying the app.
+Flask - Flask is the web framework for the app.
+Jinja - Jinja is used for Python template.
+Werkzeug - Werkzeug is used for password hashing and authentication and autohorization.
 
 # Deployment
 The source code for this site is in GitHub. Heroku was used to deploy the site. MongoDB was used for the database.
 
-The repository link on Github platform is: https://github.com/Iacopo454/Iacopo-Recipes
-
 MongoDB
 
 The following collection was used for the recipes:
-
-mongodb
-
+id:ObjectId
+recipe_name
+:""
+recipe_method
+:""
+recipe_ingredients
+:""
+recipe_author
+:""
+recipe_image
+:""
 
 GitHub
 
 To clone the code from GitHub:
-
 On GitHub, navigate to the main page of the repository.
-
 Above the list of files, click Code:
-
-
 To clone the repository using HTTPS, click HTTPS under "Clone".
-
 Open Git Bash.
-
 Change the current working directory to the location where you want the cloned directory.
-
 Type git clone, and then paste the URL you copied earlier: $ git clone https://github.com/Iacopo454/Iacopo-Recipes
-
 Press Enter to create your local clone.
-
 Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
 
 Import os
@@ -225,6 +223,16 @@ deploy
 
 That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app:
 
+# Compatibility Testing
+
+## Browser Compatibility
+Tested on Chrome, Firefox and Safari.
+OS Compatibility. 
+Tested on iOS and Windows 10.
+Tested for responsivness on Chrome DevTools.
+
+
+
 # Credits
 
 Tutorials
@@ -232,9 +240,6 @@ Tutorials
 I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project.
 
 https://www.w3schools.com/python/python_mongodb_create_db.asp
-
-Python validator
-http://pep8online.com/ very helpful to chech the identation
 
 Slack Community
 
