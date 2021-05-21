@@ -231,9 +231,14 @@ Tutorials
 
 I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project.
 
+https://www.w3schools.com/python/python_mongodb_create_db.asp
+
+Python validator
+http://pep8online.com/ very helpful to chech the identation
+
 Slack Community
 
-I was able to resolve many issues encountered after searching on Slack in the Code Institute community.
+I resolved many issues encountered after searching on Slack in the Code Institute community.
 
 All images are taken from Pixabay website. 
 The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
@@ -243,5 +248,8 @@ Code Institute mentor:
 
 Research:
 
-I used the BBC website to search for the recipe descriptions and ingredients.
+I used the BBC website to search for the recipe descriptions,ingredients and procedure. Here the link https://www.bbc.co.uk/food/recipes
+
+Photos:
+All taken from Pixabay website here the link, https://pixabay.com/
 
