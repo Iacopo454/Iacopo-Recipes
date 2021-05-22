@@ -5,6 +5,7 @@ so the website will become a sharing recipe database website.
 # Table of contents
 
 - [UX](#ux)
+- [Structure of the website](#Structure-of-the-website)
 - [User stories](#user-stories)
 - [Strategy](#strategy)
 - [Scope](#scope)
@@ -26,21 +27,6 @@ The purpose of this project is to design a website that user can enjoy to read a
 The website will be simple to use, from registering to adding a new recipe to the database. 
 The website can be very helpful and inspirational to many different category of people, especially who struggle to find the time to prepare and cook complicated meals due to working reasons. 
 The project is designed to be compatible with all devices, from computer to mobile and Highpads. 
-
-## User Stories
-
-I want the website to be easy to be used and looking good, so the user as I have already done, will be able to add a photo with the description of their recipe. 
-The recipe are easy to search using the search bar and the user can also easily register and log in clicking on the relevant page from the top nav-bar. 
-I have register using a random username and password and test it the functionality to add new recipe myself. 
-
-## Strategy
-
-The primary goal is to provide a searchable database of recipes for website users, which is visually appealing, and easy to use.
-
-## Scope
-
-The website is simple and clean in desing, it consists of an Homepage with information about the website and a Main Image, and a simple top Nav-bar to navigate through the website pages and functionalities. 
-I have searched similar websites and got influenced by them, please see below for credit. 
 
 ## Structure of the website
 
@@ -66,7 +52,20 @@ The log in and sign up pages require the user to input username/password.
 * Profile:
 Will allow users to add their own recipes, as well as edit any recipes already submitted.
 
+## User Stories
 
+I want the website to be easy to be used and looking good, so the user as I have already done, will be able to add a photo with the description of their recipe. 
+The recipe are easy to search using the search bar and the user can also easily register and log in clicking on the relevant page from the top nav-bar. 
+I have register using a random username and password and test it the functionality to add new recipe myself. 
+
+## Strategy
+
+The primary goal is to provide a searchable database of recipes for website users, which is visually appealing, and easy to use.
+
+## Scope
+
+The website is simple and clean in desing, it consists of an Homepage with information about the website and a Main Image, and a simple top Nav-bar to navigate through the website pages and functionalities. 
+I have searched similar websites and got influenced by them, please see below for credit. 
 ## Surface
 
 The websites tend to use simple colour schemes, with red darken-4 class taken from materialise often being used
@@ -144,7 +143,7 @@ The source code for this site is in GitHub. Heroku was used to deploy the site. 
 
 ## GitHub
 
-To clone the code from GitHub:
+#### To clone the code from GitHub:
 - On GitHub, navigate to the main page of the repository.
 - Above the list of files, click Code:
 - To clone the repository using HTTPS, click HTTPS under "Clone".
@@ -237,7 +236,7 @@ Create app name (must be unique, and generally use a 'dash' or 'minus' instead o
 - Tested for responsivness on Chrome DevTools.
 # Credits
 
-Tutorials
+### Tutorials
 
 I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project.
 
@@ -246,7 +245,7 @@ I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main bas
 - https://www.youtube.com/watch?v=N42pkl-aIIQ
 - https://www.w3schools.com/python/python_mongodb_create_db.asp
 
-* Slack Community
+### Slack Community
 
 I resolved many issues encountered after searching on Slack in the Code Institute community.
 
@@ -255,7 +254,7 @@ The website has been created for educational purposes only, it does not intend t
 
 * Code Institute mentor:
 
-Research:
+### Research:
 
 * I used the BBC website to search for the recipe descriptions,ingredients and procedure. 
 * Here the link https://www.bbc.co.uk/food/recipes*
