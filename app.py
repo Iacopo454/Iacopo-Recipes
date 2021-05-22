@@ -117,16 +117,16 @@ def logout():
 @app.route("/add_recipe", methods=["GET", "POST"])  # ADD RECIPE
 def add_recipe():
     if request.method == "POST":
-        recipe_vegetarian = "on" if request.form.get(
-            "recipe_vegetarian") else "off"
+        # recipe_vegetarian = "on" if request.form.get(
+        #     "recipe_vegetarian") else "off"
         recipe = {
             "recipe_name": request.form.get("recipe_name"),
             "recipe_image": request.form.get("recipe_image"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
             "recipe_serves": request.form.get("recipe_serves"),
-            "recipe_time": request.form.get("recipe_time"),
-            "recipe_vegetarian": recipe_vegetarian,
+            # "recipe_time": request.form.get("recipe_time"),
+            # "recipe_vegetarian": recipe_vegetarian,
             "recipe_addedby": session["user"]
         }
         mongo.db.recipes.insert_one(recipe)
@@ -139,16 +139,16 @@ def add_recipe():
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])  # EDIT RECIPE
 def edit_recipe(recipe_id):
     if request.method == "POST":
-        recipe_vegetarian = "on" if request.form.get(
-            "recipe_vegetarian") else "off"
+        # recipe_vegetarian = "on" if request.form.get(
+        #     "recipe_vegetarian") else "off"
         submit = {
             "recipe_name": request.form.get("recipe_name"),
             "recipe_image": request.form.get("recipe_image"),
             "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_method": request.form.get("recipe_method"),
             "recipe_serves": request.form.get("recipe_serves"),
-            "recipe_time": request.form.get("recipe_time"),
-            "recipe_vegetarian": recipe_vegetarian,
+            # "recipe_time": request.form.get("recipe_time"),
+            # "recipe_vegetarian": recipe_vegetarian,
             "recipe_addedby": session["user"]
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
@@ -159,11 +159,11 @@ def edit_recipe(recipe_id):
     return render_template("edit_recipe.html", recipe=recipe)
 
 
-@app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
-def delete_recipe(recipe_id):
-    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Recipe deleted!")
-    return redirect(url_for("get_recipes"))
+# @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
+# def delete_recipe(recipe_id):
+#     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+#     flash("Recipe deleted!")
+#     return redirect(url_for("get_recipes"))
 
 
 @app.route("/recipe_details/<recipe_id>")  # RECIPE DETAILS

@@ -164,7 +164,7 @@ Import os
 
 # Deployment to Heroku
 The live link of the website is the following:
-* https://iacopo-recipe.herokuapp.com/*
+* https://iacopo-recipe.herokuapp.com/
 - Setup files which Heroku needs in your terminal:
 
 - requirements.txt: tells Heroku which applications and dependencies are required to run our app.
