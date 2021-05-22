@@ -5,23 +5,22 @@ so the website will become a sharing recipe database website.
 # Table of contents
 
 - [UX](#ux)
-    - [Website owner goals](#website-owner-goals)
-    - [User stories](#user-stories)
-    - [Strategy](#strategy)
-    - [Structure of the website](#structure-of-the-website)
-    - [Wireframes](#wireframes)
-    - [Surface](#surface)
+- [Website owner goals](#website-owner-goals)
+- [User stories](#user-stories)
+- [Strategy](#strategy)
+- [Scope](#scope)
+- [Structure of the website](#Structure-of-the-website)
+- [Wireframes](#wireframes)
 - [Features](#features)
-- [Technology](#technology)
 - [Testing](#testing)
-- [Technologies used](Technologies-used)
-    - [Functionality testing](#functionality-testing)
-    - [Compatibility testing](#compatibility-testing)
-    - [Performance testing](#performance-testing)
+- [Technologies used](#Technologies-used)
+- [Functionality testing](#functionality-testing)
 - [Deployment](#deployment)
-- [Technologies used ](#Technologies-used)
+- [Deployment to Heroku](#deployment-to-Heroku)
+- [Compatibility testing](#compatibility-testing)
+- [Future implementations or contributions]  (#Future-implementations-or-contributions)
+- [Deployment](#deployment)
 - [Credits](#credits)
-- [Screenshots](#screenshots)
 
 
 # UX
@@ -47,31 +46,28 @@ The primary goal is to provide a searchable database of recipes for website user
 The website is simple and clean in desing, it consists of an Homepage with information about the website and a Main Image, and a simple top Nav-bar to navigate through the website pages and functionalities. 
 I have searched similar websites and got influenced by them, please see below for credit. 
 
-## Simple Structure
+## Structure of the website
 
  The website is structured as follows:
 
-Homepage:
+* Homepage:
 
 Navbar at top, showing website title, and links to other pages
 A main image of a classic Tiramisu' with a brief explanation of the purpose of the site.
 Links to log in and regsiter.
 Footer showing social media links for Instagram,Facebook and Twitter. 
 
-Recipes:
-
+* Recipes:
 A search feature at the top of the page.
 Recipes displayed via "cards" or thumbnails, consisting of the recipe image/recipe title, in a grid format.
 
-Recipe Details:
+* Recipe details:
 Will provide the recipe details such as ingredients, method, number of serving, and the author. 
 
-Login/Sign Up:
-
+* Login/Sign Up:
 The log in and sign up pages require the user to input username/password.
 
-Profile:
-
+* Profile:
 Will allow users to add their own recipes, as well as edit any recipes already submitted.
 
 
@@ -80,8 +76,6 @@ Will allow users to add their own recipes, as well as edit any recipes already s
 The websites tend to use simple colour schemes, with red darken-4 class taken from materialise often being used
 
 ## Feature
-Existing
-
 The website uses Materialize CSS features:
 
  Navbar (top navbar)
@@ -110,39 +104,39 @@ Displaying latest or featured recipes on homepage.
 ## Technologies used 
 Coding languages:
 
-HTML5
-CSS3
-Javascript
-Jquery
-Python (incl. Jinja)
-Python validator http://pep8online.com/ very helpful to chech the identation
-CSS3 validator https://jigsaw.w3.org/css-validator/
-Javascript validator https://jshint.com
-Database: 
-MongoDB
-Frameworks:
-Materialize CSS
-Flask
-Other: 
+- HTML5
+- CSS3
+- Javascript
+- Jquery
+- Python (incl. Jinja)
+- Python validator http://pep8online.com/ very helpful to chech the identation
+- CSS3 validator https://jigsaw.w3.org/css-validator/
+- Javascript validator https://jshint.com
 
-Materialize 1.0.0 version- Used for the responsive layout as well as custom components such as header, footer, images, icons, grids, cards, and collapse element.
-Font Awesome - Font Awesome is used to add social icons for socila links.
-Google Fonts - Google Fonts is used to import 'Expo' and 'Cinzel'.
-Git - Git is used to allow for tracking of any changes in the code and for the version control.
-GitPod - GitPod, connected to GitHub, hosted the coding space and allowed the project to be committed to the Github repository.
-Github - GitHub is used to host the project files and publish the live website by using Git Pages.
-The repository link on Github platform is: 
-*https://github.com/Iacopo454/Iacopo-Recipes*
-Heroku - Heroku is the cloud platform to deploying the app.
-Flask - Flask is the web framework for the app.
-Jinja - Jinja is used for Python template.
-Werkzeug - Werkzeug is used for password hashing and authentication and autohorization.
+## Database: 
+- MongoDB
+- Frameworks:
+- Materialize CSS
+- Flask
+- Other: 
+
+- Materialize 1.0.0 version- Used for the responsive layout as well as custom components such as header, footer, images, icons, grids, cards, and collapse element.
+- Font Awesome - Font Awesome is used to add social icons for socila links.
+- Google Fonts - Google Fonts is used to import 'Expo' and 'Cinzel'.
+- Git - Git is used to allow for tracking of any changes in the code and for the version control.
+- GitPod - GitPod, connected to GitHub, hosted the coding space and allowed the project to be committed to the Github repository.
+- Github - GitHub is used to host the project files and publish the live website by using Git Pages.
+- The repository link on Github platform is: 
+* https://github.com/Iacopo454/Iacopo-Recipes*
+- Heroku - Heroku is the cloud platform to deploying the app.
+- Flask - Flask is the web framework for the app.
+- Jinja - Jinja is used for Python template.
+- Werkzeug - Werkzeug is used for password hashing and authentication and autohorization.
 
 ## Deployment
 The source code for this site is in GitHub. Heroku was used to deploy the site. MongoDB was used for the database.
-The live link of the website is the following:
-*https://iacopo-recipe.herokuapp.com/*
-MongoDB
+
+### MongoDB
 
 * The following collection was used for the recipes:
 * id:ObjectId
@@ -161,7 +155,7 @@ To clone the code from GitHub:
 - Open Git Bash.
 - Change the current working directory to the location where you want the cloned directory.
 - Type git clone, and then paste the URL you copied earlier: $ git clone
-* https://github.com/Iacopo454/Iacopo-Recipes
+* https://github.com/Iacopo454/Iacopo-Recipes*
 - Press Enter to create your local clone.
 - Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
 
@@ -173,7 +167,8 @@ Import os
 - os.environ.setdefault("MONGO_DBNAME", "enter value")
 
 # Deployment to Heroku
-
+The live link of the website is the following:
+* https://iacopo-recipe.herokuapp.com/*
 - Setup files which Heroku needs in your terminal:
 
 - requirements.txt: tells Heroku which applications and dependencies are required to run our app.
@@ -215,70 +210,60 @@ Create app name (must be unique, and generally use a 'dash' or 'minus' instead o
 
 - connect
 
-Click on ‘Settings’:
+- Click on ‘Settings’:
 
-settings
+- settings
 
-Then click ‘Reveal Config Vars’
+- Then click ‘Reveal Config Vars’
 
-config
+- config
 
-Then enter the variables (from the env.py) file to securely tell Heroku which variables are required:
+- Then enter the variables (from the env.py) file to securely tell Heroku which variables are required:
 
-IP
-PORT
-MONGO_DBNAME
-MONGO_URI
-SECRET_KEY
-Push two new files (requirements.txt and Profile) to repository, in terminal, add/commit/push these:
-
-push
-
-Back in Heroku, can now safely ‘Enable Automatic Deployment’:
-
-enable
-
-Then ‘Deploy Branch’:
-
-deploy
-
-That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app:
-
+- IP
+- PORT
+- MONGO_DBNAME
+- MONGO_URI
+- SECRET_KEY
+* Push two new files (requirements.txt and Profile) to repository, in  terminal add/commit/push these:
+* push
+* Back in Heroku, can now safely ‘Enable Automatic Deployment’:
+* enable
+* Then ‘Deploy Branch’:
+* deploy
+* That should take a minute to build, once it's done, you'll see ‘Your app was successfully deployed.’ Click ‘View’ to launch your new app:
 # Compatibility Testing
 
 ## Browser Compatibility
-Tested on Chrome, Firefox and Safari.
-OS Compatibility. 
-Tested on iOS and Windows 10.
-Tested for responsivness on Chrome DevTools.
-
-# screenshots
-
+- Tested on Chrome, Firefox and Safari.
+- OS Compatibility. 
+- Tested on iOS and Windows 10.
+- Tested for responsivness on Chrome DevTools.
 # Credits
 
 Tutorials
 
 I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project.
 
-I find useful to watch also some youtube tutorials and check other sources: 
-https://www.youtube.com/watch?v=BafKf9TqEUg
-https://www.youtube.com/watch?v=N42pkl-aIIQ
-https://www.w3schools.com/python/python_mongodb_create_db.asp
+* I find useful to watch also some youtube tutorials and check other sources: 
+- https://www.youtube.com/watch?v=BafKf9TqEUg
+- https://www.youtube.com/watch?v=N42pkl-aIIQ
+- https://www.w3schools.com/python/python_mongodb_create_db.asp
 
-Slack Community
+* Slack Community
 
 I resolved many issues encountered after searching on Slack in the Code Institute community.
 
 All images are taken from Pixabay website. 
 The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
 
-My Mentor:
-Code Institute mentor:
+* Code Institute mentor:
 
 Research:
 
-I used the BBC website to search for the recipe descriptions,ingredients and procedure. Here the link https://www.bbc.co.uk/food/recipes
+* I used the BBC website to search for the recipe descriptions,ingredients and procedure. 
+* Here the link https://www.bbc.co.uk/food/recipes*
 
-Photos:
+* Photos:
 All taken from Pixabay website here the link, https://pixabay.com/
 
