@@ -1,6 +1,7 @@
 ## Introduction Milestone 3- Iacopo Recipes book 
 I am building my recipe book website which will also contains user recipes,
 so the website will become a sharing recipe database website. 
+The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
 
 # Table of contents
 
@@ -248,9 +249,6 @@ I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main bas
 ### Slack Community
 
 I resolved many issues encountered after searching on Slack in the Code Institute community.
-
-All images are taken from Pixabay website. 
-The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
 
 * Code Institute mentor:
 
