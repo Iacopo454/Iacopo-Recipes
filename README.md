@@ -2,29 +2,52 @@
 I am building my recipe book website which will also contains user recipes,
 so the website will become a sharing recipe database website. 
 
+# Table of contents
+
+- [UX](#ux)
+    - [Website owner goals](#website-owner-goals)
+    - [User stories](#user-stories)
+    - [Strategy](#strategy)
+    - [Structure of the website](#structure-of-the-website)
+    - [Wireframes](#wireframes)
+    - [Surface](#surface)
+- [Features](#features)
+- [Technology](#technology)
+- [Testing](#testing)
+- [Technologies used](Technologies-used)
+    - [Functionality testing](#functionality-testing)
+    - [Compatibility testing](#compatibility-testing)
+    - [Performance testing](#performance-testing)
+- [Deployment](#deployment)
+- [Technologies used ](#Technologies-used)
+- [Credits](#credits)
+- [Screenshots](#screenshots)
+
+
 # UX
-⋅⋅* Overview:
+* #website-owner-goals:
 
 The purpose of this project is to design a website that user can enjoy to read and learn new simple recipes and also add their own ones. 
 The website will be simple to use, from registering to adding a new recipe to the database. 
 The website can be very helpful and inspirational to many different category of people, especially who struggle to find the time to prepare and cook complicated meals due to working reasons. 
 The project is designed to be compatible with all devices, from computer to mobile and Highpads. 
 
-# User Stories
+## User Stories
 
 I want the website to be easy to be used and looking good, so the user as I have already done, will be able to add a photo with the description of their recipe. 
-The recipe are easy to search using the search bar and the user can also easily register and log in clickin on the relevant page from the top nav-bar. 
+The recipe are easy to search using the search bar and the user can also easily register and log in clicking on the relevant page from the top nav-bar. 
+I have register using a random username and password and test it the functionality to add new recipe myself. 
 
-# Strategy
+## Strategy
 
 The primary goal is to provide a searchable database of recipes for website users, which is visually appealing, and easy to use.
 
-# Scope
+## Scope
 
 The website is simple and clean in desing, it consists of an Homepage with information about the website and a Main Image, and a simple top Nav-bar to navigate through the website pages and functionalities. 
 I have searched similar websites and got influenced by them, please see below for credit. 
 
-# Simple Structure
+## Simple Structure
 
  The website is structured as follows:
 
@@ -52,11 +75,11 @@ Profile:
 Will allow users to add their own recipes, as well as edit any recipes already submitted.
 
 
-# Surface
+## Surface
 
 The websites tend to use simple colour schemes, with red darken-4 class taken from materialise often being used
 
-# Feature
+## Feature
 Existing
 
 The website uses Materialize CSS features:
@@ -76,7 +99,7 @@ Passwords are hashed so not shown on the database using the .gitignore file
 Full CRUD functionality included
 Custom 404/500 error pages
 
-# Future implementations or contributions: 
+## Future implementations or contributions: 
 
 The following features were considered during the build of the site, however due to time constraints, these were not included at the moment but could be added at a later date:
 
@@ -84,7 +107,7 @@ Ability to rate the favourite recipes.
 Pagination to ensure not too many recipes displayed in one page.
 Displaying latest or featured recipes on homepage.
 
-# Technologies used
+## Technologies used 
 Coding languages:
 
 HTML5
@@ -108,91 +131,89 @@ Google Fonts - Google Fonts is used to import 'Expo' and 'Cinzel'.
 Git - Git is used to allow for tracking of any changes in the code and for the version control.
 GitPod - GitPod, connected to GitHub, hosted the coding space and allowed the project to be committed to the Github repository.
 Github - GitHub is used to host the project files and publish the live website by using Git Pages.
-The repository link on Github platform is: https://github.com/Iacopo454/Iacopo-Recipes
+The repository link on Github platform is: 
+*https://github.com/Iacopo454/Iacopo-Recipes*
 Heroku - Heroku is the cloud platform to deploying the app.
 Flask - Flask is the web framework for the app.
 Jinja - Jinja is used for Python template.
 Werkzeug - Werkzeug is used for password hashing and authentication and autohorization.
 
-# Deployment
+## Deployment
 The source code for this site is in GitHub. Heroku was used to deploy the site. MongoDB was used for the database.
-
+The live link of the website is the following:
+*https://iacopo-recipe.herokuapp.com/*
 MongoDB
 
-The following collection was used for the recipes:
-id:ObjectId
-recipe_name
-:""
-recipe_method
-:""
-recipe_ingredients
-:""
-recipe_author
-:""
-recipe_image
-:""
+* The following collection was used for the recipes:
+* id:ObjectId
+* recipe_name:""
+* recipe_method:""
+* recipe_ingredients:""
+* recipe_author:""
+* recipe_image:""
 
-GitHub
+## GitHub
 
 To clone the code from GitHub:
-On GitHub, navigate to the main page of the repository.
-Above the list of files, click Code:
-To clone the repository using HTTPS, click HTTPS under "Clone".
-Open Git Bash.
-Change the current working directory to the location where you want the cloned directory.
-Type git clone, and then paste the URL you copied earlier: $ git clone https://github.com/Iacopo454/Iacopo-Recipes
-Press Enter to create your local clone.
-Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
+- On GitHub, navigate to the main page of the repository.
+- Above the list of files, click Code:
+- To clone the repository using HTTPS, click HTTPS under "Clone".
+- Open Git Bash.
+- Change the current working directory to the location where you want the cloned directory.
+- Type git clone, and then paste the URL you copied earlier: $ git clone
+* https://github.com/Iacopo454/Iacopo-Recipes
+- Press Enter to create your local clone.
+- Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
 
 Import os
-os.environ.setdefault("IP", "enter value")
-os.environ.setdefault("PORT", "enter value")
-os.environ.setdefault("SECRET_KEY", "enter value")
-os.environ.setdefault("MONGO_URI", "enter value")
-os.environ.setdefault("MONGO_DBNAME", "enter value")
+- os.environ.setdefault("IP", "enter value")
+- os.environ.setdefault("PORT", "enter value")
+- os.environ.setdefault("SECRET_KEY", "enter value")
+- os.environ.setdefault("MONGO_URI", "enter value")
+- os.environ.setdefault("MONGO_DBNAME", "enter value")
 
 # Deployment to Heroku
 
-Setup files which Heroku needs in your terminal:
+- Setup files which Heroku needs in your terminal:
 
-requirements.txt: tells Heroku which applications and dependencies are required to run our app.
+- requirements.txt: tells Heroku which applications and dependencies are required to run our app.
 
-Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku).
+- Procfile: what Heroku looks for to know which file runs the app (use capital P for Procfile, and delete blank line at bottom of Procfile as may cause problems when running on Heroku).
 
-setup files
+- setup files
 
-Go to Heroku, once logged into your dashboard, click ‘Create new app’:
+- Go to Heroku, once logged into your dashboard, click ‘Create new app’:
 Create app name (must be unique, and generally use a 'dash' or 'minus' instead of spaces, and all lowercase letters):
 
-app name
+- app name
 
-Choose region closest to you:
+- Choose region closest to you:
 
-region
+- region
 
-Then click ‘Create app’:
+- Then click ‘Create app’:
 
-create app
+- create app
 
-Setup automatic deployment from your GitHub repository:
+- Setup automatic deployment from your GitHub repository:
 
-auto deploy
+- auto deploy
 
-Make sure your GitHub profile is displayed:
+- Make sure your GitHub profile is displayed:
 
-profile
+- profile
 
-Then add your repository name:
+- Then add your repository name:
 
-repo name
+- repo name
 
-Click ‘Search’:
+- Click ‘Search’:
 
-search
+- search
 
-Once it finds your repo, click 'Connect' to connect to this app:
+- Once it finds your repo, click 'Connect' to connect to this app:
 
-connect
+- connect
 
 Click on ‘Settings’:
 
@@ -230,6 +251,8 @@ Tested on Chrome, Firefox and Safari.
 OS Compatibility. 
 Tested on iOS and Windows 10.
 Tested for responsivness on Chrome DevTools.
+
+# screenshots
 
 # Credits
 
