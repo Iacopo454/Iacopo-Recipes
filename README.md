@@ -3,7 +3,7 @@ I am building my recipe book website which will also contains user recipes,
 so the website will become a sharing recipe database website. 
 
 # UX
-Overview:
+⋅⋅* Overview:
 
 The purpose of this project is to design a website that user can enjoy to read and learn new simple recipes and also add their own ones. 
 The website will be simple to use, from registering to adding a new recipe to the database. 
