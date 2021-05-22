@@ -5,26 +5,22 @@ so the website will become a sharing recipe database website.
 # Table of contents
 
 - [UX](#ux)
-- [Website owner goals](#website-owner-goals)
 - [User stories](#user-stories)
 - [Strategy](#strategy)
 - [Scope](#scope)
 - [Structure of the website](#Structure-of-the-website)
 - [Wireframes](#wireframes)
 - [Features](#features)
-- [Testing](#testing)
+- [Compatibility testing](#compatibility-testing)
 - [Technologies used](#Technologies-used)
-- [Functionality testing](#functionality-testing)
 - [Deployment](#deployment)
 - [Deployment to Heroku](#deployment-to-Heroku)
-- [Compatibility testing](#compatibility-testing)
-- [Future implementations or contributions]  (#Future-implementations-or-contributions)
+- [Future implementations or contributions](#Future-implementations-or-contributions)
 - [Deployment](#deployment)
 - [Credits](#credits)
 
 
 # UX
-* #website-owner-goals:
 
 The purpose of this project is to design a website that user can enjoy to read and learn new simple recipes and also add their own ones. 
 The website will be simple to use, from registering to adding a new recipe to the database. 
