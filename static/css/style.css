@@ -6,7 +6,7 @@ body {
 
 /* Text shadow effect on navbar & footer */
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.925);
+     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* Page headers on top of each html template */

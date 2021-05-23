@@ -6,7 +6,7 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
-    import env
+    import env # noqa
 
 
 app = Flask(__name__)
@@ -41,7 +41,7 @@ def search():
 @app.route("/register", methods=["GET", "POST"])  # REGISTER
 def register():
     if request.method == "POST":
-        # check if username already exists in db
+        # check if username already exists in database
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
         # if username exists
@@ -159,13 +159,6 @@ def edit_recipe(recipe_id):
     return render_template("edit_recipe.html", recipe=recipe)
 
 
-# @app.route("/delete_recipe/<recipe_id>")  # DELETE RECIPE
-# def delete_recipe(recipe_id):
-#     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-#     flash("Recipe deleted!")
-#     return redirect(url_for("get_recipes"))
-
-
 @app.route("/recipe_details/<recipe_id>")  # RECIPE DETAILS
 def recipe_details(recipe_id):
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
@@ -186,4 +179,3 @@ if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=False)
-            
