@@ -1,0 +1,107 @@
+% extends "base.html" %}
+{% block content %}
+
+    <div class="container">
+
+        <!-- Page Header -->
+        <h4 class="center-align page-header">Edit Recipe</h4>
+
+        <!-- Card panel containing form -->
+        <div class="row card-panel grey lighten-5">
+            <!-- Form (Note: prepopulated with existing recipe details) -->
+            <form class="col s12" method="POST" action="{{ url_for('edit', recipe_id=recipe._id) }}">
+                <!-- Recipe name input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="recipe_name" name="recipe_name" minlength="1" maxlength="40" 
+                            value="{{ recipe.recipe_name }}" type="text" class="validate" required>
+                        <label for="recipe_name">Recipe Name</label>
+                        <span class="register-help">40 characters max</span>    
+                    </div>
+                </div>
+                <!-- Image input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="recipe_image" name="recipe_image" minlength="3" maxlength="5000" 
+                            value="{{ recipe.recipe_image }}" type="text" class="validate" required>
+                        <label for="recipe_image">Image URL</label>
+                        <span class="register-help">Please enter the URL for your recipe image</span>
+                    </div>
+                </div>
+                <!-- Ingedients input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="3"
+                            class="materialize-textarea validate" required>
+                            {{- recipe.recipe_ingredients -}}
+                        </textarea>
+                        <label for="recipe_ingredients">Ingredients</label>
+                        <span class="register-help">Please enter each ingredient on a new line</span>
+                    </div>
+                </div>
+                <!-- Method input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="recipe_method" name="recipe_method" minlength="3"
+                            class="materialize-textarea validate" required>
+                            {{- recipe.recipe_method -}}
+                        </textarea>
+                        <label for="recipe_method">Method</label>
+                        <span class="register-help">Please enter each new step/instruction on a new line</span>
+                    </div>
+                </div>
+                <!-- Number served input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-user-friends prefix teal-text"></i>
+                        <input id="recipe_serves" name="recipe_serves" minlength="1" maxlength="2" 
+                            value="{{ recipe.recipe_serves }}" type="text" class="validate" required>
+                        <label for="recipe_serves">Serves</label>
+                        <span class="register-help">Please enter the number of people the recipe serves, just enter the number only (e.g. for 4 people just enter "4")</span>
+                    </div>
+                </div>
+                <!-- Time taken input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="far fa-clock prefix teal-text"></i>
+                        <input id="recipe_time" name="recipe_time" minlength="1" maxlength="2" 
+                            value="{{ recipe.recipe_time }}" type="text" class="validate" required>
+                        <label for="recipe_time">Time</label>
+                        <span class="register-help">Please enter the minutes needed to make the recipe, just enter the number only (e.g. for 30 mins just enter "30")</span>
+                    </div>
+                </div>
+                <!-- Vegetarian checkbox input -->
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="switch">
+                            <i class="fas fa-carrot prefix teal-text"></i>
+                            <label for="recipe_vegetarian">
+                                {% if recipe.recipe_vegetarian == "on" %}
+                                    <input type="checkbox" id="recipe_vegetarian" name="recipe_vegetarian" checked>
+                                {% else %}
+                                    <input type="checkbox" id="recipe_vegetarian" name="recipe_vegetarian">
+                                {% endif %}
+                                <span class="lever"></span>
+                                Vegetarian?
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <!-- Cancel button (Note: takes user back to recipes.html) -->
+                        <a href="{{ url_for('get_recipes') }}" class="btn-large teal lighten-1 text-shadow">Cancel</a>
+                        <!-- Edit recipe button -->
+                        <button type="submit" class="btn-large teal lighten-1 text-shadow">
+                            Edit Recipe <i class="fas fa-plus-square right"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        
+    </div>
+
+{% endblock %}

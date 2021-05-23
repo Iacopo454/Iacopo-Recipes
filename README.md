@@ -54,7 +54,7 @@ Will provide the recipe details such as ingredients, method, number of serving, 
 The log in and sign up pages require the user to input username/password.
 
 * Profile:
-Will allow users to add their own recipes, as well as edit any recipes already submitted.
+Will allow users to add their own recipes once registered, as well as edit any recipes already submitted.
 
 ## User Stories
 
@@ -236,7 +236,7 @@ Create app name (must be unique, and generally use a 'dash' or 'minus' instead o
 
 ## Browser Compatibility
 - Tested on Chrome, Firefox and Safari.
-- OS Compatibility. 
+- OS Compatibility with different devices. 
 - Tested on iOS and Windows 10.
 - Tested for responsivness on Chrome DevTools.
 # Credits

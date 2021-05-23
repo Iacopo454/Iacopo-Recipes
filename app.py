@@ -136,8 +136,8 @@ def add_recipe():
     return render_template("add_recipe.html")
 
 
-@app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])  # EDIT RECIPE
-def edit_recipe(recipe_id):
+@app.route("/edit/<recipe_id>", methods=["GET", "POST"])  # EDIT RECIPE
+def edit(recipe_id):
     if request.method == "POST":
         # recipe_vegetarian = "on" if request.form.get(
         #     "recipe_vegetarian") else "off"
@@ -156,7 +156,7 @@ def edit_recipe(recipe_id):
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
 
-    return render_template("edit_recipe.html", recipe=recipe)
+    return render_template("edit.html", recipe=recipe)
 
 
 @app.route("/recipe_details/<recipe_id>")  # RECIPE DETAILS
