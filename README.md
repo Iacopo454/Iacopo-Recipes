@@ -2,6 +2,7 @@
 I am building my recipe book website which will also contains user recipes,
 so the website will become a sharing recipe database website. 
 The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
+![alt text](homepage.png-static-image)
 
 # Table of contents
 
@@ -143,6 +144,7 @@ The source code for this site is in GitHub. Heroku was used to deploy the site. 
 * recipe_image:""
 
 ## GitHub
+- The link of the repository on Github is https://github.com/Iacopo454/Iacopo-Recipes
 
 #### To clone the code from GitHub:
 - On GitHub, navigate to the main page of the repository.
@@ -151,7 +153,7 @@ The source code for this site is in GitHub. Heroku was used to deploy the site. 
 - Open Git Bash.
 - Change the current working directory to the location where you want the cloned directory.
 - Type git clone, and then paste the URL you copied earlier: $ git clone
-* https://github.com/Iacopo454/Iacopo-Recipes*
+* https://github.com/Iacopo454/Iacopo-Recipes
 - Press Enter to create your local clone.
 - Create your own env.py file to store variables, and ensure this is listed in your .gitignore file to keep these from being displayed publicly:
 
