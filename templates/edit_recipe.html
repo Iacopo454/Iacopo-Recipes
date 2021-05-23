@@ -10,7 +10,7 @@
         <div class="row card-panel grey lighten-5">
             <!-- Form (Note: prepopulated with existing recipe details) -->
             <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
-                <!-- Recipe name input -->
+                <!-- Recipe name -->
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="recipe_name" name="recipe_name" minlength="1" maxlength="40" 
@@ -50,7 +50,7 @@
                         <span class="register-help">Please enter each new step/instruction on a new line</span>
                     </div>
                 </div>
-                <!-- Number served input -->
+                <!-- Number serves -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-user-friends prefix teal-text"></i>
@@ -70,27 +70,11 @@
                         <span class="register-help">Please enter the minutes needed to make the recipe, just enter the number only (e.g. for 30 mins just enter "30")</span>
                     </div>
                 </div>
-                <!-- Vegetarian checkbox input -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <div class="switch">
-                            <i class="fas fa-carrot prefix teal-text"></i>
-                            <label for="recipe_vegetarian">
-                                {% if recipe.recipe_vegetarian == "on" %}
-                                    <input type="checkbox" id="recipe_vegetarian" name="recipe_vegetarian" checked>
-                                {% else %}
-                                    <input type="checkbox" id="recipe_vegetarian" name="recipe_vegetarian">
-                                {% endif %}
-                                <span class="lever"></span>
-                                Vegetarian?
-                            </label>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- Buttons -->
                 <div class="row">
                     <div class="col s12 center-align">
-                        <!-- Cancel button (Note: takes user back to recipes.html) -->
+                        <!-- Cancel button takes user back to recipes.html -->
                         <a href="{{ url_for('get_recipes') }}" class="btn-large teal lighten-1 text-shadow">Cancel</a>
                         <!-- Edit recipe button -->
                         <button type="submit" class="btn-large teal lighten-1 text-shadow">
