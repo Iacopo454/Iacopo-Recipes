@@ -4,6 +4,7 @@ so the website will become a sharing recipe database website.
 The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
 <!-- ![alt text](homepage.png-static-image) -->
 ![homepage](static/image/homepage.png)
+![recipe](static/image/recipe.png)
 
 # Table of contents
 
