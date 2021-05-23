@@ -1,4 +1,4 @@
-% extends "base.html" %}
+{% extends "base.html" %}
 {% block content %}
 
     <div class="container">
@@ -9,7 +9,7 @@
         <!-- Card panel containing form -->
         <div class="row card-panel grey lighten-5">
             <!-- Form (Note: prepopulated with existing recipe details) -->
-            <form class="col s12" method="POST" action="{{ url_for('edit', recipe_id=recipe._id) }}">
+            <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
                 <!-- Recipe name input -->
                 <div class="row">
                     <div class="input-field col s12">
