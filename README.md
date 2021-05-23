@@ -2,7 +2,8 @@
 I am building my recipe book website which will also contains user recipes,
 so the website will become a sharing recipe database website. 
 The website has been created for educational purposes only, it does not intend to be used for commercial purposes.
-![alt text](homepage.png-static-image)
+<!-- ![alt text](homepage.png-static-image) -->
+![homepage](static/image/homepage.png)
 
 # Table of contents
 
