@@ -23,16 +23,16 @@
             </div>
         </div>
 
-        <!--Recipes added -->
-         <div class="row">
+        <!-- Recipes added below header -->
+        <div class="row">
             <div class="col s12 m8 offset-m2">
                 <h6 class="center-align page-header">
                     See all recipes you have added below:
                 </h6>
             </div>
         </div>
-     
-        <!-- Users recipe display -->
+    
+        <!-- Users recipe cards display -->
         <div class="section-userrecipes">
             <div class="row">
                 {% for recipe in recipes if session.user|lower == recipe.recipe_addedby|lower %}  <!-- Note: if recipes added by user, shown below -->
@@ -44,7 +44,7 @@
                     </div>
                     <p class="recipecard-title">{{ recipe.recipe_name }}</p>
                     <div class="card-action">
-                        <a href="{{ url_for(edit, recipe_id=recipe._id) }}" class="btn-small">Edit</a>
+                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small">Edit</a>
                         <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small tooltipped" data-position="bottom"
                             data-tooltip="Make sure you want to delete before hitting the button!">Delete</a>
                     </div>
