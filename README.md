@@ -96,9 +96,8 @@ Custom 404/500 error pages
 
 The following features were considered during the build of the site, however due to time constraints, these were not included at the moment but could be added at a later date:
 
-Ability to rate the favourite recipes. 
-Pagination to ensure not too many recipes displayed in one page.
-Displaying latest or featured recipes on homepage.
+Rating for the favourite recipes. 
+Pagination improvement to ensure that not too many recipes displayed in one page 
 
 ## Technologies used 
 Coding languages:
@@ -252,9 +251,10 @@ I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main bas
 
 ### Slack Community
 
-I resolved many issues encountered after searching on Slack in the Code Institute community.
+* I resolved many issues encountered after searching on Slack in the Code Institute community.
+* I managed to solve error using Google and checking with the Tutor support team of Code Institute 
 
-* Code Institute mentor:
+* Code Institute mentor: Adegbenga Adeye
 
 ### Research:
 
