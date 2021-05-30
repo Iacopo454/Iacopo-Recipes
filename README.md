@@ -242,7 +242,7 @@ Create app name (must be unique, and generally use a 'dash' or 'minus' instead o
 
 ### Tutorials
 
-I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project.
+I used the Code Institute Task Manger Mini-Project by Tim Nelson as the main basis of my own project and checked the peer-code-review channel for project ideas  
 
 * I find useful to watch also some youtube tutorials and check other sources: 
 - https://www.youtube.com/watch?v=BafKf9TqEUg
